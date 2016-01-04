@@ -28,7 +28,7 @@ import com.zhh.ssm.service.UserService;
 public class UserServiceImplTest {
 
 	@Autowired
-	private UserService userServiceImpl;
+	private UserService userService;
 	
 	/** 
 	* @Title: setUp 
@@ -69,7 +69,7 @@ public class UserServiceImplTest {
 	  
 	  user.setCreatetime(new Date());
 	  
-	  int count=userServiceImpl.insertUser(user);
+	  int count=userService.insertUser(user);
 	  
 	  System.out.println("testInsertUser ==> "+count);
 		 
