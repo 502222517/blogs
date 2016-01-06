@@ -16,16 +16,15 @@
 		
 	<!-- 启用spring mvc 注解--> 
 	<mvc:annotation-driven />
-	
-	<!-- 加上这句话，能让前台直接访问静态html页面 -->
-	<!-- <mvc:default-servlet-handler/>  -->
+	<!-- <mvc:annotation-driven conversion-service="conversionService" /> -->
+ 
 	
 	<!-- 自动扫描的包名 ，使Spring支持自动检测组件，如注解的Controller-->  
 	<context:component-scan base-package="com.zhh.ssm.controller"></context:component-scan>
 	<context:component-scan base-package="com.zhh.ssm.service.impl"></context:component-scan>	
 	
 	<!-- 静态资源解析 包括 ：js、css、img、.. -->
-	<mvc:resources location="/WEB-INF/app/" mapping="/app/**" />
+	<mvc:resources mapping="/app/**"  location="/app/" />
 	
 	
 	<!-- 视图解析器 解析jsp解析，默认使用jstl标签，classpath下的得有jstl的包 -->
@@ -57,15 +56,15 @@
 	</mvc:interceptors> -->
 	
 	<!-- 自定义参数绑定 -->
-	<bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
-		<!-- 转换器 -->
+	<!-- <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+		转换器
 		<property name="converters">
 			<list>
-				<!-- 日期类型转换 -->
+				日期类型转换
 				<bean class="com.zhh.ssm.converter.DateConverter"/>
 			</list>
 		</property>
-	</bean>
+	</bean> -->
 	
 	 
 		

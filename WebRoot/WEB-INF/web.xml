@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <display-name>blogs</display-name>
+  <!-- log4j配置  -->
+  <context-param>
+		<param-name>log4jConfigLocation</param-name>
+		<param-value>/WEB-INF/classes/log4j.properties</param-value>
+	</context-param>
+	<listener>  
+    	<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>  
+	</listener>
   
     <!-- 加载spring容器 -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/config/spring/applicationContext-*.xml</param-value>
+		<param-value>/WEB-INF/classes/spring/applicationContext-*.xml</param-value>
 	</context-param>
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
+	 
 	
 	<!-- springmvc前端控制器 -->
 	<servlet>
@@ -18,7 +27,7 @@
 		<!-- contextConfigLocation配置springmvc加载的配置文件（配置处理器映射器、适配器等等） 如果不配置contextConfigLocation，默认加载的是/WEB-INF/servlet名称-serlvet.xml（springmvc-servlet.xml） -->
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>/WEB-INF/config/spring/springmvc.xml</param-value>
+			<param-value>/WEB-INF/classes/spring/springmvc.xml</param-value>
 		</init-param>
 	</servlet>
 	
@@ -34,20 +43,21 @@
   
   
     <!-- springmvc前端控制器，rest配置 -->
-<!-- 	<servlet>
+ 	<servlet>
 		<servlet-name>springmvc_rest</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-		contextConfigLocation配置springmvc加载的配置文件（配置处理器映射器、适配器等等） 如果不配置contextConfigLocation，默认加载的是/WEB-INF/servlet名称-serlvet.xml（springmvc-servlet.xml）
+		<!-- contextConfigLocation配置springmvc加载的配置文件（配置处理器映射器、适配器等等） 如果不配置contextConfigLocation，默认加载的是/WEB-INF/servlet名称-serlvet.xml（springmvc-servlet.xml） -->
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>/WEB-INF/config/spring/springmvc.xml</param-value>
+			<param-value>/WEB-INF/classes/spring/springmvc.xml</param-value>
 		</init-param>
 	</servlet>
 
 	<servlet-mapping>
 		<servlet-name>springmvc_rest</servlet-name>
 		<url-pattern>/</url-pattern>
-	</servlet-mapping> -->
+	</servlet-mapping> 
+	
 	
 	<!-- post乱码过虑器 -->
 	<filter>

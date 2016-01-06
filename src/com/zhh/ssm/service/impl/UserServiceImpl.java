@@ -8,6 +8,7 @@
 package com.zhh.ssm.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.zhh.ssm.mapper.base.UserMapper;
 import com.zhh.ssm.po.base.User;
@@ -20,6 +21,7 @@ import com.zhh.ssm.service.UserService;
  * @author zhh
  * @date 2016年1月4日 下午4:36:17  
  */
+@Service
 public class UserServiceImpl implements UserService {
 	
 	@Autowired

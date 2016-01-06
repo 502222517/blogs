@@ -13,7 +13,11 @@ import java.util.Date;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.zhh.ssm.po.base.User;
 import com.zhh.ssm.service.UserService;
@@ -25,7 +29,14 @@ import com.zhh.ssm.service.UserService;
  * @author zhh
  * @date 2016年1月4日 下午4:48:20  
  */
-public class UserServiceImplTest {
+
+@RunWith(SpringJUnit4ClassRunner.class)  
+@ContextConfiguration(locations ={  
+    "classpath:spring/applicationContext-dao.xml",
+    "classpath:spring/applicationContext-service.xml",
+    "classpath:spring/springmvc.xml"  
+})
+public class UserServiceImplTest extends AbstractJUnit4SpringContextTests {
 
 	@Autowired
 	private UserService userService;
@@ -62,7 +73,7 @@ public class UserServiceImplTest {
 	  
 	  user.setUsername("502222517");
 	  user.setPassword("52013145");
-	  user.setNickname("浮游");
+	  user.setNickname("测试用户");
 	  user.setSex(1);
 	  user.setTel("15270800382");
 	  user.setEmail("502222517@qq.com");
