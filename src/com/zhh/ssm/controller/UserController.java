@@ -7,15 +7,20 @@
  */
 package com.zhh.ssm.controller;
 
+import java.util.Date;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.zhh.ssm.po.JSONData;
+import com.zhh.ssm.po.JSONObject;
 import com.zhh.ssm.po.base.User;
 import com.zhh.ssm.service.impl.UserServiceImpl;
 
@@ -44,20 +49,23 @@ public class UserController {
 	* @throws
 	 */
 	@RequestMapping(value="/{id}",method={RequestMethod.GET})
-	public @ResponseBody JSONData  getUser(@PathVariable("id") Integer id) throws Exception{
-		JSONData jsonData=new JSONData();
+	@ResponseBody
+	public JSONObject  getUser(HttpServletRequest request, HttpServletResponse response
+			,@PathVariable("id") Integer id) throws Exception{
+		
+		JSONObject json= new JSONObject();
 		
 		try {
 			User user= userServiceImpl.findUserById(id);
-			jsonData.setData(user);
-			jsonData.setStatus(0);
+			json.put("user",user);
+			json.setStatus(0);
 			
 		} catch (Exception e) {
-			jsonData.setStatus(-1);
-			jsonData.setMsg(e.getMessage());
+			json.setStatus(-1);
+			json.setMsg(e.getMessage());
 		}
 		 
-		return jsonData;
+		return json;
 	}
 	
 	/**
@@ -70,9 +78,10 @@ public class UserController {
 	* @throws
 	 */
 	@RequestMapping(value="/register",method={RequestMethod.POST})
-	public @ResponseBody JSONData  register(User user){
+	@ResponseBody
+	public  JSONObject  register(User user){
 		
-		JSONData jsonData=new JSONData();
+		JSONObject jsonData=new JSONObject();
 		try {
 			int count= userServiceImpl.insertUser(user);
 			jsonData.setStatus(count);
@@ -94,20 +103,22 @@ public class UserController {
 	* @throws
 	 */
 	@RequestMapping(value="/login",method={RequestMethod.POST})
-	public @ResponseBody JSONData login(String username,String password){
-		JSONData jsonData=new JSONData();
+	public @ResponseBody JSONObject login(HttpSession session,String username,String password){
+		JSONObject json=new JSONObject();
 		
 		try {
 			User user= userServiceImpl.findUserById(1);
-			jsonData.setStatus(0);
-			jsonData.setData(user);
+			json.setStatus(0);
+			json.put("user",user);
+			
+			session.setAttribute("user",user);
 			
 		} catch (Exception e) {
-			jsonData.setStatus(-1);
-			jsonData.setMsg(e.getMessage());
+			json.setStatus(-1);
+			json.setMsg(e.getMessage());
 		}
 		
-		return jsonData;
+		return json;
 	}
 	
 	/**
@@ -119,9 +130,16 @@ public class UserController {
 	* @throws
 	 */
 	@RequestMapping(value="/logout",method={RequestMethod.GET,RequestMethod.POST})
-	public @ResponseBody JSONData logout(){
+	@ResponseBody
+	public  JSONObject logout(HttpServletRequest request, HttpServletResponse response,HttpSession session){
+		JSONObject json=new JSONObject();
 		
-		return null;
+		session.removeAttribute("user");
+		
+		
+		
+		
+		return json;
 	}
 	
 	
