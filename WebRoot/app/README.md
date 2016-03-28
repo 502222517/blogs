@@ -1,30 +1,22 @@
-# 请先安装 node
-请自行安装node
+# 网站说明
+	1.使用java mybaits+springmvc 架构。
+	2.前端使用bower管理包，grunt打包项目文件。
+	3.使用bootstrap 插件作为基础ui库。
 
-# 安装grunt
-npm install -g grunt-cli
-
-# 安装bower
-npm install -g bower
-
-# 安装grunt和bower依赖文件
-
-npm install
-bower install
-
-> 友情提示:
-	1. bower.json 作为bower包管理文件,负责项目类库的依赖
-	2. package.json 作为npm包管理器,负责grunt打包等事项
+# 参考网站
+	http://www.ghostchina.com/
+	http://www.yangqq.com/
 	
-	以上bower和npm分工协作
+	
+# 网站导航
+	首页 博文 酷站 常识 关于
+	
+	
+# 启动
+	1.运行tomcat
+	2.访问: http://192.168.1.6:8080/blogs/app/static/index.html
+	
+	
+	
 
-	使用帮助:
-		如需要新增项目依赖的类库,执行bower install 类库名 --save
-		如新增grunt相关,执行npm install grunt插件名 --save-dev
-		
-		
-	注意：bower 管理的iscroll 有个bug（会将所有文件拷贝），修复如下：
-	bower_components/iscroll/.bower.json 添加字段： "main": "build/*", 	
 
-static_template 静态页面的切图 样式直接引用build/css/style.css
-bulid 目录为构建后的项目代码
