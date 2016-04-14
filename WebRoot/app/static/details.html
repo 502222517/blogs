@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="renderer" content="webkit">
+		<title>文章详情-浮游网</title>
+		<meta name="keywords" content="浮游个人博客,个人博客,张先生博客">
+		<meta name="description" content="浮游个人博客，是一个站在web前端开发之路的程序员个人网站。">
+		<link type="text/css" rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css" />
+		<link type="text/css" rel="stylesheet" href="../css/app.css" />
+		<link type="text/css" rel="stylesheet" href="../css/master.css" />
+		<link type="text/css" rel="stylesheet" href="../css/home.css" />
+	</head>
+	<body class="bg-body">
+		
+		<div id="master-header"></div>
+		 
+		<div class="content-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 main-content">
+						<article id="96" class="post">
+
+						    <header class="post-head">
+						        <h1 class="post-title">为 Ubuntu 和 Debian 安装最新版本的 Node.js</h1>
+						        <section class="post-meta">
+						            <span class="author">作者：<a href="/author/wangsai/">王赛</a></span> •
+						            <time class="post-date" datetime="2016年3月23日星期三凌晨12点08分" title="2016年3月23日星期三凌晨12点08分">2016年3月23日</time>
+						        </section>
+						    </header>
+
+
+						    <section class="post-content">
+						        <p>运行 <a href="http://www.ghostchina.com/">Ghost</a> 必须要安装 <a href="https://nodejs.org/">Node.js</a>。但是 Ubuntu 或 Debian 的软件仓库中的 Node.js 更新较慢，甚至只能等到新版本发布才能有最新的 Node.js 用。下面我们说一下从 <a href="https://github.com/nodesource/distributions">NodeSource</a> 提供的仓库中安装最新版本的 Node.js。</p>
+						
+								<h2 id="">支持的操作系统版本</h2>
+								
+								<p>被支持的 Ubuntu 版本：</p>
+								
+								<ul>
+								<li>Ubuntu 12.04 LTS (Precise Pangolin)</li>
+								<li>Ubuntu 14.04 LTS (Trusty Tahr)</li>
+								<li>Ubuntu 15.04 (Vivid Vervet)</li>
+								<li>Ubuntu 15.10 (Wily Werewolf) [For Node &gt;= 4.2.x]</li>
+								</ul>
+								
+								<p>被支持的 Debian 版本：</p>
+								
+								<ul>
+								<li>Debian 7 (wheezy)</li>
+								<li>Debian 8 / stable (jessie)</li>
+								<li>Debian testing (stretch, aliased to jessie)</li>
+								<li>Debian unstable (sid)</li>
+								</ul>
+								
+								<h2 id="">安装步骤</h2>
+								
+								<p>Ghost 目前支持 <code>0.10.*</code>、<code>0.12.*</code> 和 <code>&gt;=4.2 &lt;5.* (LTS)</code> 版本的 Node.js，推荐的是 <code>&gt;0.10.40 (最新版本)</code>。详细说明请看这里：<a href="http://support.ghost.org/supported-node-versions/">http://support.ghost.org/supported-node-versions/</a></p>
+								
+								<p><strong>根据我们的安装经验，推荐安装 4.x（LTS）版本的 Node.js。</strong></p>
+								
+								<h3 id="nodejsv4x">安装 Node.js v4.x</h3>
+								
+								<p><strong>Ubuntu 系统</strong></p>
+								
+								<pre><code class="language-bash hljs">curl <span class="hljs-operator">-s</span>L https://deb.nodesource.com/setup_4.x | sudo -E bash -  
+								sudo apt-get install -y nodejs  
+								</code></pre>
+								
+								<p><strong>Debian 系统。以 root 权限执行下列指令</strong></p>
+								
+								<pre><code class="language-bash hljs">curl <span class="hljs-operator">-s</span>L https://deb.nodesource.com/setup_4.x | bash -  
+								apt-get install -y nodejs  
+								</code></pre>
+								
+								<h3 id="nodejsv010">安装 Node.js v0.10</h3>
+								
+								<p><strong>Ubuntu 系统</strong></p>
+								
+								<pre><code class="language-bash hljs">curl <span class="hljs-operator">-s</span>L https://deb.nodesource.com/setup_0.<span class="hljs-number">10</span> | sudo -E bash -  
+								sudo apt-get install -y nodejs  
+								</code></pre>
+								
+								<p><strong>Debian 系统。以 root 权限执行下列指令</strong></p>
+								
+								<pre><code class="language-bash hljs">curl <span class="hljs-operator">-s</span>L https://deb.nodesource.com/setup_0.<span class="hljs-number">10</span> | bash -  
+								apt-get install -y nodejs  
+								</code></pre>
+								
+								<h3 id="nodejsv012">安装 Node.js v0.12</h3>
+								
+								<p><strong>Ubuntu 系统</strong></p>
+								
+								<pre><code class="language-bash hljs">curl <span class="hljs-operator">-s</span>L https://deb.nodesource.com/setup_0.<span class="hljs-number">12</span> | sudo -E bash -  
+								sudo apt-get install -y nodejs  
+								</code></pre>
+								
+								<p><strong>Debian 系统。以 root 权限执行下列指令</strong></p>
+								
+								<pre><code class="language-bash hljs">curl <span class="hljs-operator">-s</span>L https://deb.nodesource.com/setup_0.<span class="hljs-number">12</span> | bash -  
+								apt-get install -y nodejs  
+								</code></pre>
+								
+								<h3 id="nodejsv5x">安装 Node.js v5.x</h3>
+								
+								<p><strong>注意：v5.x 的 Node.js 不被 Ghost 支持，以下安装介绍只为了完整介绍 Node.js 各个版本的安装！</strong></p>
+								
+								<p><strong>Ubuntu 系统</strong></p>
+								
+								<pre><code class="language-bash hljs">curl <span class="hljs-operator">-s</span>L https://deb.nodesource.com/setup_5.x | sudo -E bash -  
+								sudo apt-get install -y nodejs  
+								</code></pre>
+								
+								<p><strong>Debian 系统。以 root 权限执行下列指令</strong></p>
+								
+								<pre><code class="language-bash hljs">curl <span class="hljs-operator">-s</span>L https://deb.nodesource.com/setup_5.x | bash -  
+								apt-get install -y nodejs  
+								</code></pre>
+								    </section>
+								
+								    <footer class="post-footer clearfix">
+								        <div class="pull-left tag-list">
+								            <i class="fa fa-folder-open-o"></i>
+								            
+								        </div>
+								
+								        <div class="pull-right share">
+								            <div class="bdsharebuttonbox share-icons bdshare-button-style0-24" data-bd-bind="1460452754816">
+								    <a href="#" class="bds_more" data-cmd="more"></a>
+								    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+								    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+								    <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+								    <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+								    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+								</div>        </div>
+								    </footer>
+								
+						 </article>
+						 
+					</div>
+					<div id="master-sidebar" class="col-md-4 sidebar">
+						 
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--content-wrap end-->
+		
+		<div id="master-footer"></div>
+		 
+	    
+	    <a href="#" id="back-to-top" style="display: block;"><i class="fa fa-angle-up"></i></a>
+	    
+		
+		<script type="text/javascript" src="../lib/jquery/jquery.js"></script>
+		<script type="text/javascript" src="../lib/bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/master.js"></script>
+	</body>
+</html>
