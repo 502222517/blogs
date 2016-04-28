@@ -17,4 +17,9 @@
 	color: #aaa;
 	text-decoration: none;
 }
-
+.float-left{
+	float: left;
+}
+.float-right{
+	float: right;
+}
