@@ -15,7 +15,7 @@
 	
 # 启动
 	1.运行tomcat
-	2.访问: http://192.168.1.6:8080/blogs/app/static/index.html
+	2.访问: http://192.168.1.6:9999/blogs/app/static/index.html
 	
 	
 	

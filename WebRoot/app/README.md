@@ -15,12 +15,12 @@
 	http://v3.bootcss.com/css/
 	
 # 网站导航
-	首页 博文 酷站 常识 关于
+	首页 博文 作品 酷站 关于
 	
 	
 # 启动
 	1.运行tomcat
-	2.访问: http://192.168.1.6:8080/blogs/app/static/index.html
+	2.访问: http://192.168.1.6:9999/blogs/app/static/index.html
 	
 	
 	
