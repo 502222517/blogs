@@ -16,9 +16,8 @@
 	<!-- 加载db.properties文件中的内容，db.properties文件中key命名要有一定的特殊规则 -->
 	<context:property-placeholder location="classpath:db.properties" />
 	
-	<!-- 配置数据源 ，com.mchange.v2.c3p0.ComboPooledDataSource -->
-	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
-		destroy-method="close">
+	<!-- 配置数据源 ，com.mchange.v2.c3p0.ComboPooledDataSource  destroy-method="close" -->
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" >
 		<property name="driverClass" value="${jdbc.driver}" />
 		<property name="jdbcUrl" value="${jdbc.url}" />
 		<property name="user" value="${jdbc.username}" />

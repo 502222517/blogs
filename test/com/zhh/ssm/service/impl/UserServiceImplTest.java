@@ -11,6 +11,7 @@ import static org.junit.Assert.fail;
 
 import java.util.Date;
 
+import org.codehaus.jackson.map.annotate.JsonSerialize;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -58,8 +59,9 @@ public class UserServiceImplTest extends AbstractJUnit4SpringContextTests {
 	 * Test method for {@link com.zhh.ssm.service.impl.UserServiceImpl#findUserById(int)}.
 	 */
 	@Test
-	public void testFindUserById() {
-		fail("Not yet implemented");
+	public void testFindUserById() throws Exception{
+		User user=userService.findUserById(1);
+		System.out.println("testInsertUser ==> "+user.getNickname());
 	}
 
 	/**

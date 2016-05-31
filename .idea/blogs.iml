@@ -2,6 +2,7 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://E:/code/branches/custom_api2_9_0414" />
+    <content url="file://E:/code/capi" />
     <content url="file://E:/code/custom_api" />
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />

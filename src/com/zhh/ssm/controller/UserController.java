@@ -48,7 +48,7 @@ public class UserController {
 	* @return User    返回类型 
 	* @throws
 	 */
-	@RequestMapping(value="/{id}",method={RequestMethod.GET})
+	@RequestMapping(value="/user/{id}",method={RequestMethod.GET})
 	@ResponseBody
 	public JSONObject  getUser(HttpServletRequest request, HttpServletResponse response
 			,@PathVariable("id") Integer id) throws Exception{
