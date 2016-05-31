@@ -2,53 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57378987-a483-4706-8d6f-e9ff77fc7444" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/app/lib/backbone/backbone.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/app/lib/bootlint/bootlint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/app/lib/bootstrap/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/app/lib/bootstrap/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/app/lib/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/app/lib/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/app/lib/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/app/lib/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/app/lib/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/app/lib/bootstrap/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/app/lib/jquery/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/app/lib/nice-validator/images/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/app/lib/nice-validator/images/validator_default.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/app/lib/nice-validator/images/validator_simple.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/app/lib/nice-validator/jquery.validator.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/app/lib/nice-validator/jquery.validator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/app/lib/nice-validator/local/en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/app/lib/nice-validator/local/ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/app/lib/nice-validator/local/zh-CN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/app/lib/nice-validator/local/zh-TW.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/app/lib/requirejs/require.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/app/lib/text/text.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/app/lib/underscore/underscore.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/zhh/ssm/controller/UserController.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/zhh/ssm/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/zhh/ssm/service/impl/UserServiceImplTest.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/zhh/ssm/service/impl/UserServiceImplTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/blogs.iml" afterPath="$PROJECT_DIR$/.idea/blogs.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" afterPath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/db.properties" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/db.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/spring/applicationContext-dao.xml" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/spring/applicationContext-dao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/spring/applicationContext-service.xml" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/spring/applicationContext-service.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/log4j.properties" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/log4j.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/spring/springmvc.xml" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/spring/springmvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/app/grunt/Gruntfile.js" afterPath="$PROJECT_DIR$/WebRoot/app/grunt/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/app/static/about.html" afterPath="$PROJECT_DIR$/WebRoot/app/static/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/app/static/articles.html" afterPath="$PROJECT_DIR$/WebRoot/app/static/articles.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/app/static/details.html" afterPath="$PROJECT_DIR$/WebRoot/app/static/details.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/app/static/index.html" afterPath="$PROJECT_DIR$/WebRoot/app/static/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/app/static/master.html" afterPath="$PROJECT_DIR$/WebRoot/app/static/master.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/app/static/website.html" afterPath="$PROJECT_DIR$/WebRoot/app/static/website.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/app/static/works.html" afterPath="$PROJECT_DIR$/WebRoot/app/static/works.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/db.properties" afterPath="$PROJECT_DIR$/config/db.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/spring/applicationContext-dao.xml" afterPath="$PROJECT_DIR$/config/spring/applicationContext-dao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/spring/applicationContext-service.xml" afterPath="$PROJECT_DIR$/config/spring/applicationContext-service.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/log4j.properties" afterPath="$PROJECT_DIR$/config/log4j.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/spring/springmvc.xml" afterPath="$PROJECT_DIR$/config/spring/springmvc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zhh/ssm/controller/UserController.java" afterPath="$PROJECT_DIR$/src/com/zhh/ssm/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/zhh/ssm/service/impl/UserServiceImplTest.java" afterPath="$PROJECT_DIR$/test/com/zhh/ssm/service/impl/UserServiceImplTest.java" />
     </list>
     <ignored path="blogs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -116,8 +77,8 @@
       <file leaf-file-name="address.js" pinned="false" current-in-tab="true">
         <entry file="file://E:/code/custom_api/app/webroot/xd/js/me/address.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="138" column="29" selection-start-line="138" selection-start-column="29" selection-end-line="138" selection-end-column="29" />
+            <state relative-caret-position="598">
+              <caret line="142" column="27" selection-start-line="142" selection-start-column="27" selection-end-line="142" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -777,12 +738,12 @@
       <workItem from="1464227638577" duration="13657000" />
       <workItem from="1464313793016" duration="16149000" />
       <workItem from="1464572129710" duration="9191000" />
-      <workItem from="1464658380409" duration="3833000" />
+      <workItem from="1464658380409" duration="6305000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="398272000" />
+    <option name="totallyTimeSpent" value="400744000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -794,7 +755,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1932" height="1056" extended-state="1" />
+    <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18004224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1212,8 +1173,8 @@
     </entry>
     <entry file="file://E:/code/custom_api/app/webroot/xd/js/me/address.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="138" column="29" selection-start-line="138" selection-start-column="29" selection-end-line="138" selection-end-column="29" />
+        <state relative-caret-position="598">
+          <caret line="142" column="27" selection-start-line="142" selection-start-column="27" selection-end-line="142" selection-end-column="27" />
           <folding />
         </state>
       </provider>
