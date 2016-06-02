@@ -2,15 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57378987-a483-4706-8d6f-e9ff77fc7444" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/com/zhh/ssm/mapper/base/ArticleMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/com/zhh/ssm/mapper/base/BannerMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resource/com/zhh/ssm/mapper/base/TagMapper.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/resource/com/zhh/ssm/mapper/base/UserMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/zhh/ssm/mapper/base/ArticleMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/zhh/ssm/mapper/base/BannerMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/zhh/ssm/mapper/base/TagMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/zhh/ssm/po/base/Article.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/zhh/ssm/po/base/ArticleExample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/zhh/ssm/po/base/Banner.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/zhh/ssm/po/base/BannerExample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/zhh/ssm/po/base/Tag.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/zhh/ssm/po/base/TagExample.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/zhh/ssm/po/base/User.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/zhh/ssm/po/base/UserExample.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/zhh/ssm/po/base/User.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/zhh/ssm/po/base/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/zhh/ssm/po/base/UserExample$Criteria.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/zhh/ssm/po/base/UserExample$Criteria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/zhh/ssm/po/base/UserExample$Criterion.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/zhh/ssm/po/base/UserExample$Criterion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/zhh/ssm/po/base/UserExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/zhh/ssm/po/base/UserExample$GeneratedCriteria.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/zhh/ssm/mapper/base/UserMapper.xml" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/zhh/ssm/mapper/base/UserMapper.xml" />
     </list>
     <ignored path="blogs.iws" />
@@ -35,8 +42,8 @@
       <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
         <entry file="file://E:/code/capi/app/webroot/xd/js/common/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="54" column="50" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
+            <state relative-caret-position="583">
+              <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -512,12 +519,12 @@
       <workItem from="1464572129710" duration="9191000" />
       <workItem from="1464658380409" duration="9715000" />
       <workItem from="1464744604990" duration="5059000" />
-      <workItem from="1464830619788" duration="3106000" />
+      <workItem from="1464830619788" duration="3953000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="412319000" />
+    <option name="totallyTimeSpent" value="413166000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -946,8 +953,8 @@
     </entry>
     <entry file="file://E:/code/capi/app/webroot/xd/js/common/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="54" column="50" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
+        <state relative-caret-position="583">
+          <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
           <folding />
         </state>
       </provider>
