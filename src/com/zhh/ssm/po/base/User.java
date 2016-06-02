@@ -17,6 +17,8 @@ public class User {
 
     private String email;
 
+    private Integer status;
+
     private Date createtime;
 
     public Integer getUserid() {
@@ -73,6 +75,14 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email == null ? null : email.trim();
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 
     public Date getCreatetime() {
