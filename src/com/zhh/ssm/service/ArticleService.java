@@ -10,6 +10,7 @@ package com.zhh.ssm.service;
 import java.util.List;
 
 import com.zhh.ssm.po.base.Article;
+import com.zhh.ssm.po.base.ArticleExample;
 
 /** 
  * @Title: 文章管理 
@@ -66,8 +67,17 @@ public interface ArticleService {
 	public int deleteArticle(int id) throws Exception;
 	
 	
-	
-	
+	/**
+	 * 获取文章列表
+	* @Title: getList 
+	* @Description: TODO(这里用一句话描述这个方法的作用) 
+	* @param @param article
+	* @param @return
+	* @param @throws Exception    设定文件 
+	* @return List<ArticleExample>    返回类型 
+	* @throws
+	 */
+	public List<ArticleExample> getList(ArticleExample article) throws Exception;
 	
 	
 

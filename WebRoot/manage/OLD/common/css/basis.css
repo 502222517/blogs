@@ -1,0 +1,218 @@
+/* ===========================  样式重置 开始 ================================= */
+/*
+KISSY CSS Reset
+理念：清除和重置是紧密不可分的
+特色：1.适应中文 2.基于最新主流浏览器
+*/
+
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置默认字体 */
+body,
+button, input, select, textarea { /* for ie */
+    font: 1.2rem/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+}
+
+h1 { font-size: 1.8rem; /* 18px / 12px = 1.5 */ }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.4rem; }
+h4, h5, h6 { font-size: 100%; }
+
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace; } /* 统一等宽字体 */
+small { font-size: 1.2rem; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
+
+/* 重置列表元素 */
+ul, ol { list-style: none; }
+
+/* 重置文本格式元素 */
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+abbr[title], acronym[title] { /* 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果 */
+    border-bottom: 0.1rem dotted;
+    cursor: help;
+}
+
+q:before, q:after { content: ''; }
+
+/* 重置表单元素 */
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: none; } /* img 搭车：让链接里的 img 无边框 */
+/* 注：optgroup 无法扶正 */
+button, input, select, textarea {
+    font-size: 100%; /* 使得表单元素在 ie 下能继承字体大小 */
+}
+
+/* 重置表格元素 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 重置 hr */
+hr {
+    border: none;
+    height: 0.1rem;
+}
+
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+html { 
+	overflow-y: scroll; 
+	box-sizing: border-box;
+    font-size: 62.5%;
+}
+body {
+    font: 1.2rem 'STHeiti Light','HiraginoSansGB', 'Microsoft YaHei', Helvetica, Arial, sans-serif;
+}
+/* =========================== 样式重置 结束 ================================= */
+ 
+/* 常用样式 begin */ 
+.through{text-decoration:line-through;}
+
+.absolute{
+	position: absolute;
+	z-index: 2;
+}
+.hide{
+    display: none;
+}
+.hidden{
+    visibility: hidden;
+}
+.h_full{
+	height: 100%;
+}
+
+.box{
+    display: -moz-box;
+    display: -webkit-box;
+    display: -o-box;
+    display: -ms-box;
+    display: box;
+}
+.box-horizontal{
+    -webkit-box-orient:horizontal;
+    -moz-box-orient:horizontal;
+    -ms-box-orient:horizontal;
+    box-orient:horizontal;
+}
+.box-vertical{
+    -webkit-box-orient:vertical;
+    -moz-box-orient:vertical;
+    -ms-box-orient:vertical;
+    box-orient:vertical;
+}
+
+.flex-item-1{
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    -ms-box-flex: 1;
+    box-flex: 1;
+}
+.flex-item-2{
+    -moz-box-flex: 2;
+    -webkit-box-flex: 2;
+    -ms-box-flex: 2;
+    box-flex: 2;
+}
+.flex-item-3{
+    -moz-box-flex: 3;
+    -webkit-box-flex: 3;
+    -ms-box-flex: 3;
+    box-flex: 3;
+}
+
+/*  文字对齐方式  */
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+
+.no-event{
+    pointer-events: none;
+}
+
+.text-ellipsis{
+    text-overflow: ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+/* 不能选中，禁止手机选中图片  */
+.no-select{
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.position-middle{
+	position: absolute;
+	top:50%; 
+	left:50%; 
+	z-index: 9;
+	-moz-transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	-o-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+
+/* 常用样式 end */ 
+
+/* 基础组件样式 begin */
+
+#mask{ 
+	position: fixed;
+ 	display: none; 
+ 	left: 0px;
+ 	right: 0px;
+ 	top: 0px;
+ 	bottom: 0px;
+ 	z-index: 99;
+ 	background: rgba(0, 0, 0, 0.5);
+}
+#tips { 
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	padding: 10px; 
+	background: rgba(0, 0, 0, 0.7); 
+	border-radius: 4px; 
+	text-align: center; 
+}
+#tips .loading-img { 
+	margin: 0 auto; 
+	width: 20px; 
+	height: 20px;
+	background: url(../images/loading.gif) no-repeat;
+	background-size:100% 100%;
+}
+#tips .msg { 
+	max-width: 180px; 
+	color: #fff; 
+}
+
+/* 基础组件样式 end */
+
+/* 网站公共样式 begin */
+.layout{
+	margin: auto;
+	width: 1000px;
+}
+/* 网站公共样式 end */
+
+

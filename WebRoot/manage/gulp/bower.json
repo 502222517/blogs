@@ -1,0 +1,25 @@
+{
+  "name": "blogs_manage",
+  "description": "my blogs",
+  "main": "index.js",
+  "authors": [
+    "zhh"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "blogs",
+    "zhh"
+  ],
+  "homepage": "https://github.com/502222517/blogs",
+  "moduleType": [
+    "amd"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

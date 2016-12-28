@@ -21,21 +21,27 @@ public class JSONObject {
 	
 	public JSONObject(){
 		this.data= new HashMap<String, Object>();
-		this.status=0;
+		this.setCode(0);
 	}
 	
-	private int status;
+	private int code;
 	
 	private String msg;
 	
 	private Map<String, Object> data;
 	
-	public int getStatus() {
-		return status;
+	/** 
+	* @return code 
+	*/
+	public int getCode() {
+		return code;
 	}
 
-	public void setStatus(int status) {
-		this.status = status;
+	/** 
+	* @param code 要设置的 code 
+	*/
+	public void setCode(int code) {
+		this.code = code;
 	}
 
 	public String getMsg() {
@@ -61,4 +67,6 @@ public class JSONObject {
 	public void clear(){
 		data.clear();
 	}
+
+	
 }

@@ -58,10 +58,10 @@ public class UserController {
 		try {
 			User user= userServiceImpl.findUserById(id);
 			json.put("user",user);
-			json.setStatus(0);
+			json.setCode(0);
 			
 		} catch (Exception e) {
-			json.setStatus(-1);
+			json.setCode(-1);
 			json.setMsg(e.getMessage());
 		}
 		 
@@ -84,10 +84,10 @@ public class UserController {
 		JSONObject jsonData=new JSONObject();
 		try {
 			int count= userServiceImpl.insertUser(user);
-			jsonData.setStatus(count);
+			jsonData.setCode(count);
 			
 		} catch (Exception e) {
-			jsonData.setStatus(-1);
+			jsonData.setCode(-1);
 			jsonData.setMsg(e.getMessage());
 		}
 		return jsonData;
@@ -108,13 +108,13 @@ public class UserController {
 		
 		try {
 			User user= userServiceImpl.findUserById(1);
-			json.setStatus(0);
+			json.setCode(0);
 			json.put("user",user);
 			
 			session.setAttribute("user",user);
 			
 		} catch (Exception e) {
-			json.setStatus(-1);
+			json.setCode(-1);
 			json.setMsg(e.getMessage());
 		}
 		
