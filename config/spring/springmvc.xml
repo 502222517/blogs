@@ -26,6 +26,8 @@
 	
 	<!-- 静态资源解析 包括 ：js、css、img、.. -->
 	<mvc:resources mapping="/app/**"  location="/app/" />
+	<mvc:resources mapping="/manager/**"  location="/manager/" />
+	<mvc:resources mapping="/old/**"  location="/old/" />
 	
 	
 	
