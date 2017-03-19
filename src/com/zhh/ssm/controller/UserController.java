@@ -136,6 +136,9 @@ public class UserController {
 		
 		session.removeAttribute("user");
 		
+		
+		
+		
 		return json;
 	}
 	

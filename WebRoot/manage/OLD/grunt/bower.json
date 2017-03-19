@@ -1,0 +1,52 @@
+{
+  "name": "fuyou",
+  "description": "fuyoublogs,zhh",
+  "main": [],
+  "dependencies": {
+    "jquery": "~2.2.2",
+    "bootstrap": "~3.3.6",
+    "underscore": "~1.8.3",
+    "backbone": "~1.3.2",
+    "nice-validator": "~0.10.5",
+    "requirejs": "~2.2.0",
+    "text": "~2.0.14"
+  },
+  "exportsOverride": {
+    "bootstrap": {
+      "js": "dist/js/bootstrap.js",
+      "css": [
+        "dist/css/bootstrap.css",
+        "dist/css/bootstrap-theme.css"
+      ],
+      "fonts": "dist/fonts/*"
+    },
+    "nice-validator": {
+      "": "dist/jquery.validator.{css,js}",
+      "local": "dist/local/*",
+      "images": "dist/images/*"
+    }
+  },
+  "devDependencies": {},
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "motion",
+    "physics",
+    "particles"
+  ],
+  "authors": [
+    "zhh <502222517@qq.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
+}

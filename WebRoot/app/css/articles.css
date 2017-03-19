@@ -1,0 +1,114 @@
+.tags{
+
+}
+.tags>li{
+    display: inline-block;
+}
+.tags>li>a{
+    margin: 0 8px 10px 0;
+    padding: 6px 15px;
+    display: inline-block;
+    border-radius: 4px;
+    background: #fff;
+}
+.tags>li.selected>a{
+    border: 1px solid #e67e22;
+    background:#e67e22;
+    color: #fff;
+}
+
+.articles-list{
+    padding: 20px 0;
+}
+.articles-list>.list-left,
+.articles-list>.list-center,
+.articles-list>.list-right{
+    /*margin:0 10px;*/
+}
+.articles-list .art-item{
+    margin: 0 0 30px;
+    padding: 10px 10px 5px 12px;
+    border-radius: 3px;
+    background: #fff;
+    word-break: break-all;
+}
+.articles-list .art-item:last-child{
+    margin:0 0 20px;
+}
+.articles-list .art-title{
+
+}
+.articles-list .art-content{
+    padding: 8px 0;
+    line-height: 25px;
+    text-indent: 28px;
+    font-size: 14px;
+}
+.articles-list .art-tags{
+
+}
+.articles-list .art-footer{
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    font-size: 12px;
+}
+.articles-list .art-tags>.art-tag{
+    margin-left: 3px;
+}
+.articles-list .art-read{
+    margin-left: 10px;
+}
+.articles-list .art-time{
+    font-size: 12px;
+}
+.z-pagination{
+    text-align: center;
+}
+.z-pagination>li{
+    display: inline-block;
+    margin-right: 6px;
+}
+.z-pagination>li.behind{
+    display: none;
+}
+.z-pagination>li>a{
+    text-decoration: none;
+    padding: 8px 12px;
+    background: #fff;
+    font-size: 14px;
+    color: #666;
+    border-radius: 5px;
+}
+.z-pagination>li>a:hover{
+    color: #e67e22;
+}
+.z-pagination>li.disabled>a,.z-pagination>li.disabled>a:hover{
+    color: #999;
+}
+.z-pagination>li.selected>a{
+    background:#e67e22;
+    color: #fff;
+}
+/* 中小屏幕（手机或者平板，小于 992px） */
+@media (max-width: 992px) {
+    .z-pagination>li{
+        display: none;
+    }
+
+    .z-pagination>li.prev,
+    .z-pagination>li.next,
+    .z-pagination>li.total,
+    .z-pagination>li.behind{
+        display: inline-block;
+    }
+    .z-pagination>li.next.middle{
+        display: none;
+    }
+}
+
+.pad-bot-40{
+    padding-bottom: 40px;
+}
+
+

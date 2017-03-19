@@ -4,6 +4,16 @@
 	<classpathentry kind="src" path="resource"/>
 	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="src" path="config"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre7">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/aopalliance-1.0.jar"/>
@@ -46,26 +56,5 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-web-3.2.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-webmvc-3.2.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/validation-api-1.0.0.GA.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring3.2.0/spring-aop-3.2.0.RELEASE-sources.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring3.2.0/spring-aspects-3.2.0.RELEASE-sources.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring3.2.0/spring-beans-3.2.0.RELEASE-sources.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring3.2.0/spring-context-3.2.0.RELEASE-sources.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring3.2.0/spring-context-support-3.2.0.RELEASE-sources.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring3.2.0/spring-core-3.2.0.RELEASE-sources.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring3.2.0/spring-expression-3.2.0.RELEASE-sources.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring3.2.0/spring-instrument-3.2.0.RELEASE-sources.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring3.2.0/spring-instrument-tomcat-3.2.0.RELEASE-sources.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring3.2.0/spring-jdbc-3.2.0.RELEASE-sources.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring3.2.0/spring-jms-3.2.0.RELEASE-sources.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring3.2.0/spring-orm-3.2.0.RELEASE-sources.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring3.2.0/spring-oxm-3.2.0.RELEASE-sources.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring3.2.0/spring-struts-3.2.0.RELEASE-sources.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring3.2.0/spring-test-3.2.0.RELEASE-sources.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring3.2.0/spring-tx-3.2.0.RELEASE-sources.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring3.2.0/spring-web-3.2.0.RELEASE-sources.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring3.2.0/spring-webmvc-3.2.0.RELEASE-sources.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring3.2.0/spring-webmvc-portlet-3.2.0.RELEASE-sources.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.launching.macosx.MacOSXType/jre1.7"/>
-	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.5"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>

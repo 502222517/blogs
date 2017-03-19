@@ -73,7 +73,7 @@ public class UserServiceImplTest extends AbstractJUnit4SpringContextTests {
 		
 	  User user=new User();	
 	  
-	  user.setUsername("浮游");
+	  user.setUsername("502222517");
 	  user.setPassword("52013145");
 	  user.setNickname("测试用户");
 	  user.setSex(1);
